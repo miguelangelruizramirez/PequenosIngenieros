@@ -1,236 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pequeños Ingenieros</title>
+<meta name="description" content="Pequeños Ingenieros: proyectos educativos padre-hijo. Aprende, crea y comparte con tu hijo.">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Roboto',sans-serif;}
+body {background:#f0f8ff; color:#333; line-height:1.6;}
+a {text-decoration:none; color:inherit;}
 
-1	<!DOCTYPE html> 
-2	<html lang="es"> 
-3	<head> 
-4	<meta charset="UTF-8"> 
-5	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-6	<title>Pequeños Ingenieros - Proyecto Educativo</title> 
-7	<meta name="description" content="Pequeños Ingenieros: proyectos educativos padre-hijo. Aprende, crea y comparte con tu hijo."> 
-8	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
-9	<style> 
-10	/* Reset y tipografía */ 
-11	* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; } 
-12	body { background: #f8f9fa; color: #333; line-height: 1.6; } 
-13	a { text-decoration: none; color: inherit; } 
-14	 
-15	/* Header */ 
-16	header { background: #00796b; color: white; padding: 25px 10px; text-align: center; } 
-17	header h1 { font-size: 2.2em; margin-bottom: 10px; } 
-18	nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; } 
-19	nav ul li a { color: white; font-weight: 500; padding: 8px 15px; border-radius: 5px; transition: 0.3s; } 
-20	nav ul li a:hover { background: #004d40; } 
-21	 
-22	/* Hero */ 
-23	.hero { padding: 60px 20px; text-align: center; background: linear-gradient(135deg,#26a69a,#80cbc4); color: white; } 
-24	.hero h2 { font-size: 2em; margin-bottom: 15px; } 
-25	.hero p { font-size: 1.1em; margin-bottom: 25px; } 
-26	.hero a.button { background: #004d40; color: white; padding: 12px 25px; border-radius: 6px; font-weight: 600; transition: 0.3s; } 
-27	.hero a.button:hover { background: #00251a; } 
-28	 
-29	/* Secciones */ 
-30	section { padding: 50px 20px; max-width: 1200px; margin: auto; } 
-31	section h2 { text-align: center; font-size: 2em; color: #00796b; margin-bottom: 30px; } 
-32	 
-33	/* Cards */ 
-34	.cards-container { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 20px; } 
-35	.card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; padding:20px; } 
-36	.card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); } 
-37	.card-content h3 { margin-bottom: 10px; color: #004d40; } 
-38	.card-content p, .card-content ul, .card-content li { color: #666; font-size: 0.95em; margin-bottom:10px; } 
-39	.card-content ul { padding-left: 20px; } 
-40	 
-41	/* CTA */ 
-42	.cta { text-align: center; padding: 40px 20px; background: #e0f2f1; border-radius: 10px; margin: 40px auto; } 
-43	.cta a.button { background: #00796b; color: white; padding: 14px 30px; font-weight: 600; border-radius: 6px; transition: 0.3s; } 
-44	.cta a.button:hover { background: #004d40; } 
-45	 
-46	/* Footer */ 
-47	footer { text-align: center; padding: 20px 10px; background: #004d40; color: white; } 
-48	footer a { color: #26a69a; } 
-49	 
-50	/* Responsive */ 
-51	@media(max-width:600px) { 
-52	  header h1 { font-size: 1.5em; } 
-53	  .hero h2 { font-size: 1.5em; } 
-54	  .hero p { font-size: 1em; } 
-55	} 
-56	</style> 
-57	</head> 
-58	<body> 
-59	 
-60	<!-- Header --> 
-61	<header> 
-62	  <h1>Pequeños Ingenieros</h1> 
-63	  <nav> 
-64	    <ul> 
-65	      <li><a href="login.html">Iniciar Sesión</a></li> 
-66	      <li><a href="register.html">Registrarse</a></li> 
-67	      <li><a href="#objetivos">Objetivos</a></li> 
-68	      <li><a href="#proyectos">Proyectos</a></li> 
-69	    </ul> 
-70	  </nav> 
-71	</header> 
-72	 
-73	<!-- Hero --> 
-74	<section class="hero"> 
-75	  <h2>Aprende, Crea y Comparte con tu Hijo</h2> 
-76	  <p>Actividades prácticas, seguras y divertidas que fomentan creatividad, aprendizaje y colaboración.</p> 
-77	  <a href="#objetivos" class="button">Conocer el Proyecto</a> 
-78	</section> 
-79	 
-80	<!-- Introducción --> 
-81	<section id="introduccion"> 
-82	  <h2>Introducción</h2> 
-83	  <div class="card"> 
-84	    <div class="card-content"> 
-85	      <p>Pequeños Ingenieros es un proyecto educativo que permite a padres e hijos realizar actividades prácticas, seguras y divertidas, fomentando creatividad, aprendizaje y colaboración.</p> 
-86	    </div> 
-87	  </div> 
-88	</section> 
-89	 
-90	<!-- Objetivos --> 
-91	<section id="objetivos"> 
-92	  <h2>Objetivos</h2> 
-93	  <div class="cards-container"> 
-94	    <div class="card"> 
-95	      <div class="card-content"> 
-96	        <h3>Objetivo Principal</h3> 
-97	        <p>Pasar tiempo de calidad con los hijos mientras se enseñan conceptos prácticos de ciencia, ingeniería y creatividad.</p> 
-98	      </div> 
-99	    </div> 
-100	    <div class="card"> 
-101	      <div class="card-content"> 
-102	        <h3>Objetivos Secundarios</h3> 
-103	        <ul> 
-104	          <li>Documentar proyectos paso a paso con PDFs, imágenes y videos.</li> 
-105	          <li>Crear una comunidad donde otros padres puedan replicar proyectos y aportar ideas.</li> 
-106	          <li>Generar un portafolio profesional y educativo.</li> 
-107	        </ul> 
-108	      </div> 
-109	    </div> 
-110	  </div> 
-111	</section> 
-112	 
-113	<!-- Alcance --> 
-114	<section id="alcance"> 
-115	  <h2>Alcance</h2> 
-116	  <div class="card"> 
-117	    <div class="card-content"> 
-118	      <ul> 
-119	        <li>Proyectos para niños de preescolar y primaria, adaptables a distintas edades.</li> 
-120	        <li>Materiales accesibles y seguros.</li> 
-121	        <li>Comunidad online con participación, comentarios, retos y galerías.</li> 
-122	      </ul> 
-123	    </div> 
-124	  </div> 
-125	</section> 
-126	 
-127	<!-- Metodología --> 
-128	<section id="metodologia"> 
-129	  <h2>Metodología</h2> 
-130	  <div class="cards-container"> 
-131	    <div class="card"> 
-132	      <div class="card-content"> 
-133	        <h3>1. Preparación de materiales</h3> 
-134	      </div> 
-135	    </div> 
-136	    <div class="card"> 
-137	      <div class="card-content"> 
-138	        <h3>2. Construcción y ensamble</h3> 
-139	      </div> 
-140	    </div> 
-141	    <div class="card"> 
-142	      <div class="card-content"> 
-143	        <h3>3. Prueba y validación</h3> 
-144	      </div> 
-145	    </div> 
-146	    <div class="card"> 
-147	      <div class="card-content"> 
-148	        <h3>4. Documentación (fotos, diagramas, videos)</h3> 
-149	      </div> 
-150	    </div> 
-151	    <div class="card"> 
-152	      <div class="card-content"> 
-153	        <h3>5. Participación comunitaria</h3> 
-154	      </div> 
-155	    </div> 
-156	  </div> 
-157	</section> 
-158	 
-159	<!-- Licencia y Legal --> 
-160	<section id="legal"> 
-161	  <h2>Licencia y Aspectos Legales</h2> 
-162	  <div class="card"> 
-163	    <div class="card-content"> 
-164	      <ul> 
-165	        <li>Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 México (CC BY-NC-SA 4.0).</li> 
-166	        <li>Supervisión adulta obligatoria.</li> 
-167	        <li>Materiales seguros y no tóxicos.</li> 
-168	        <li>Opcional: registro de marca ante IMPI y aviso de privacidad para usuarios en línea.</li> 
-169	      </ul> 
-170	    </div> 
-171	  </div> 
-172	</section> 
-173	 
-174	<!-- Requisitos técnicos --> 
-175	<section id="requisitos"> 
-176	  <h2>Requisitos Técnicos</h2> 
-177	  <div class="card"> 
-178	    <div class="card-content"> 
-179	      <ul> 
-180	        <li>Acceso a internet y navegador compatible.</li> 
-181	        <li>Visor de PDF.</li> 
-182	        <li>Opcional: editor de imágenes.</li> 
-183	      </ul> 
-184	    </div> 
-185	  </div> 
-186	</section> 
-187	 
-188	<!-- Ideas de Expansión --> 
-189	<section id="expansion"> 
-190	  <h2>Ideas de Expansión</h2> 
-191	  <div class="cards-container"> 
-192	    <div class="card"> 
-193	      <div class="card-content"> 
-194	        <ul> 
-195	          <li>Retos mensuales y gamificación.</li> 
-196	          <li>Insignias digitales y logros.</li> 
-197	          <li>Eventos virtuales de construcción en vivo.</li> 
-198	          <li>Galería y mapa interactivo de proyectos.</li> 
-199	        </ul> 
-200	      </div> 
-201	    </div> 
-202	  </div> 
-203	</section> 
-204	 
-205	<!-- Plantilla --> 
-206	<section id="plantilla"> 
-207	  <h2>Plantilla para Nuevos Proyectos</h2> 
-208	  <div class="card"> 
-209	    <div class="card-content"> 
-210	      <p>Nombre del proyecto: _______________________</p> 
-211	      <p>Fecha de inicio: ____ / ____ / ____</p> 
-212	      <p>Objetivo educativo: _______________________</p> 
-213	      <p>Materiales: _______________________</p> 
-214	      <p>Etapas: _______________________</p> 
-215	      <p>Documentación: PDF, imágenes, video opcional</p> 
-216	      <p>Observaciones: _______________________</p> 
-217	    </div> 
-218	  </div> 
-219	</section> 
-220	 
-221	<!-- CTA --> 
-222	<section class="cta"> 
-223	  <h2>Únete al Proyecto</h2> 
-224	  <p>Comparte tus proyectos y participa en la comunidad de Pequeños Ingenieros.</p> 
-225	  <a href="register.html" class="button">Registrarse Ahora</a> 
-226	</section> 
-227	 
-228	<!-- Footer --> 
-229	<footer> 
-230	  <p>&copy; By Ing. Miguel Angel Ruiz Raramirez 2025 Pequeños Ingenieros. Licencia <a href="LICENCIA.md">CC BY-NC-SA 4.0</a></p> 
-231	</footer> 
-232	 
-233	</body> 
-234	</html> 
-235	 
+header {background:#00897b; color:white; padding:25px 10px; text-align:center;}
+header h1 {font-size:2.4em; margin-bottom:10px; font-weight:700;}
+nav ul {list-style:none; display:flex; justify-content:center; gap:20px; flex-wrap:wrap;}
+nav ul li a {color:white; font-weight:500; padding:8px 15px; border-radius:5px; transition:0.3s;}
+nav ul li a:hover {background:#004d40;}
+
+.hero {padding:60px 20px; text-align:center; background:linear-gradient(135deg,#26a69a,#80cbc4); color:white; border-radius:10px; margin:20px;}
+.hero h2 {font-size:2em; margin-bottom:15px;}
+.hero p {font-size:1.2em; margin-bottom:25px;}
+.hero a.button {background:#004d40; color:white; padding:14px 30px; border-radius:8px; font-weight:600; transition:0.3s;}
+.hero a.button:hover {background:#00251a;}
+
+section {padding:50px 20px; max-width:1200px; margin:auto;}
+section h2 {text-align:center; font-size:2em; color:#00796b; margin-bottom:30px;}
+
+.cards-container {display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px;}
+.card {background:white; border-radius:15px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.1); transition:transform 0.3s, box-shadow 0.3s; padding:25px; text-align:center;}
+.card:hover {transform:translateY(-5px); box-shadow:0 8px 25px rgba(0,0,0,0.15);}
+.card h3 {margin-bottom:12px; color:#004d40; font-weight:600;}
+.card p, .card ul, .card li {color:#555; font-size:1em; margin-bottom:10px;}
+.card ul {padding-left:20px;}
+.card img {width:100%; height:180px; object-fit:cover; border-radius:10px; margin-bottom:15px;}
+
+.cta {text-align:center; padding:50px 20px; background:#e0f2f1; border-radius:15px; margin:40px auto;}
+.cta a.button {background:#00796b; color:white; padding:16px 35px; font-weight:600; border-radius:8px; transition:0.3s;}
+.cta a.button:hover {background:#004d40;}
+
+footer {text-align:center; padding:25px 10px; background:#004d40; color:white; border-top-left-radius:10px; border-top-right-radius:10px;}
+footer a {color:#26a69a; font-weight:500;}
+
+@media(max-width:600px){
+header h1 {font-size:1.8em;}
+.hero h2 {font-size:1.5em;}
+.hero p {font-size:1.05em;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Pequeños Ingenieros</h1>
+  <nav>
+    <ul>
+      <li><a href="#objetivos">Objetivos</a></li>
+      <li><a href="#alcance">Alcance</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#cta">Únete</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Aprende, Crea y Comparte con tu Hijo</h2>
+  <p>Actividades educativas, prácticas y seguras que fomentan creatividad, aprendizaje y diversión.</p>
+  <a href="#cta" class="button">Únete a la Comunidad</a>
+</section>
+
+<section id="objetivos">
+  <h2>Objetivos</h2>
+  <div class="cards-container">
+    <div class="card">
+      <h3>Objetivo Principal</h3>
+      <p>Pasar tiempo de calidad con los hijos mientras se enseñan conceptos prácticos de ciencia, ingeniería y creatividad.</p>
+    </div>
+    <div class="card">
+      <h3>Objetivos Secundarios</h3>
+      <ul>
+        <li>Documentar proyectos paso a paso con PDFs, imágenes y videos.</li>
+        <li>Crear una comunidad donde otros padres puedan replicar proyectos y aportar ideas.</li>
+        <li>Generar un portafolio profesional y educativo.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="alcance">
+  <h2>Alcance</h2>
+  <div class="cards-container">
+    <div class="card">
+      <ul>
+        <li>Proyectos para niños de preescolar y primaria, adaptables a distintas edades.</li>
+        <li>Materiales accesibles y seguros.</li>
+        <li>Comunidad online con participación, comentarios, retos y galerías.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos">
+  <h2>Proyectos Destacados</h2>
+  <div class="cards-container">
+    <div class="card">
+      <img src="images/proyecto1.jpg" alt="Brazo Hidráulico">
+      <h3>Brazo Hidráulico</h3>
+      <p>Aprende hidráulica con un brazo funcional seguro y divertido para niños.</p>
+    </div>
+    <div class="card">
+      <img src="images/proyecto2.jpg" alt="Catapulta de Palitos">
+      <h3>Catapulta de Palitos</h3>
+      <p>Física divertida construyendo catapultas y lanzando pequeños proyectiles.</p>
+    </div>
+    <div class="card">
+      <img src="images/proyecto3.jpg" alt="Vehículo de Cartón">
+      <h3>Vehículo de Cartón</h3>
+      <p>Explora ingeniería simple creando un vehículo que se mueva con ruedas y palillos.</p>
+    </div>
+  </div>
+</section>
+
+<section id="cta" class="cta">
+  <h2>¡Únete a la Comunidad!</h2>
+  <p>Comparte tus proyectos, aprende con otros padres y fomenta el aprendizaje divertido en casa.</p>
+  <a href="register.html" class="button">Registrarse Ahora</a>
+</section>
+
+<footer>
+  <p>Licencia: <a href="LICENCIA.md">CC BY-NC-SA 4.0</a> | Diseñado por Ing. Miguel Ángel Ruiz Ramírez</p>
+</footer>
+
+</body>
+</html>
