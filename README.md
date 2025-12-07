@@ -1,25 +1,3 @@
-Introducción
-
-Pequeños Ingenieros es un proyecto educativo que permite a padres e hijos realizar actividades prácticas, seguras y divertidas, fomentando creatividad, aprendizaje y colaboración.
-
-Objetivo Principal
-
-Pasar tiempo de calidad con los hijos mientras se enseñan conceptos prácticos de ciencia, ingeniería y creatividad.
-
-Objetivos Secundarios
-
-Documentar proyectos paso a paso con PDFs, imágenes y videos.
-
-Crear una comunidad donde otros padres puedan replicar proyectos y aportar ideas.
-
-Generar un portafolio profesional y educativo.
-
-
-Alcance
-
-Proyectos para niños de preescolar y primaria, adaptables a distintas edades.
-
-Materiales accesibles y seguros.
 
 Comunidad online con participación, comentarios, retos y galerías.
 
